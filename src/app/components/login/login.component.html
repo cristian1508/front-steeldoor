@@ -1,0 +1,18 @@
+<div class="body">
+    <div class="login">
+        <form [formGroup]="form" (ngSubmit)="login()">
+            <img src="../assets/img/puerta.png" width="120px" style="color: azure;">
+            <h1>SteelDoor</h1>
+            <mat-form-field class="broad">
+                <mat-label>User or Email</mat-label>
+                <input matInput autocomplete="off" formControlName="user">
+            </mat-form-field>
+            <mat-form-field class="broad">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+            <br>
+            <button mat-stroked-button color="primary" [disabled]="form.invalid" class="broad button" type="submit">Log In</button>
+        </form>
+    </div>
+  </div>

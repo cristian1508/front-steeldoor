@@ -1,0 +1,31 @@
+.body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    margin: 10px;
+    padding: 0px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+
+.broad{
+    width: 80%;
+    height: 80px;
+}
+
+.button{
+    width: 80%;
+    height: 60px;
+}
+
