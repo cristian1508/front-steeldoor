@@ -10,7 +10,7 @@ import { Job } from '../interfaces/job';
 })
 export class JobService {
 
-private ApiUrl = environment.url
+ApiUrl = environment.url
 
   constructor(private _http : HttpClient) { 
   }

@@ -1,17 +1,21 @@
 <div class="body">
-    <div class="login">
-        <form [formGroup]="form" (ngSubmit)="login()">
+    <div class="register">
+        <form [formGroup]="form" (ngSubmit)="signUp()">
             <img src="../assets/img/puerta.png" width="120px" style="color: azure;">
             <mat-form-field class="broad">
-                <mat-label>User or Email</mat-label>
+                <mat-label>Email</mat-label>
                 <input matInput autocomplete="off" formControlName="email">
             </mat-form-field>
             <mat-form-field class="broad">
                 <mat-label>Password</mat-label>
                 <input matInput type="password" formControlName="password">
             </mat-form-field>
+            <mat-form-field class="broad">
+                <mat-label> Confirm Password</mat-label>
+                <input matInput type="password" formControlName="passwordConfirm">
+            </mat-form-field>
             <br>
-            <button mat-stroked-button color="primary" [disabled]="form.invalid" class="broad button" type="submit">Log In</button>
+            <button mat-stroked-button color="primary" [disabled]="form.invalid" class="broad button" type="submit">SignUp</button>
         </form>
     </div>
   </div>

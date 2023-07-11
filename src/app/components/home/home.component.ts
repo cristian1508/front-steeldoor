@@ -1,18 +1,18 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Job } from 'src/app/interfaces/job';
 import { JobService } from 'src/app/services/job.service';
 
 @Component({
-  selector: 'app-admin-view',
-  templateUrl: './admin-view.component.html',
-  styleUrls: ['./admin-view.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AdminViewComponent implements OnInit, AfterViewInit{
+export class HomeComponent implements OnInit, AfterViewInit{
 
-  displayedColumns: string[] = ['title', 'company', 'description', 'location', 'salaryRange', 'skills'];
+  displayedColumns: string[] = ['title', 'company', 'description', 'location', 'salaryRange', 'skills', 'actions'];
   dataSource: MatTableDataSource<Job>;
   listJobs: Job[] = [];
 
@@ -41,8 +41,6 @@ export class AdminViewComponent implements OnInit, AfterViewInit{
       console.log(this.dataSource.data);
 
     });  
-
-    
   }
 
   applyFilter(event: Event) {
@@ -56,3 +54,4 @@ export class AdminViewComponent implements OnInit, AfterViewInit{
 
   
 }
+

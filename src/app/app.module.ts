@@ -13,22 +13,24 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { UserViewComponent } from './components/user-view/user-view.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { HomeComponent } from './components/home/home.component';
+import { AuthorizedComponent } from './components/authorized/authorized.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AdminViewComponent,
     MenuComponent,
-    UserViewComponent
+    HomeComponent,
+    AuthorizedComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
